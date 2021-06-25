@@ -1,11 +1,73 @@
 /* 1 rem = 10 px Font Size */
 html { font-size: 62.5%; }
 body { 
-  font-size: 1.6rem; 
   font-family: 'Lato', sans-serif;
+  color: $iceblue;
 }
 
 h1, h2, h3, h4, .logo, button {
   font-family: 'Dokdo', cursive;
   font-weight: normal;
 } 
+
+h1, h2, h3, h4, .logo {
+  color: $marigold;
+}
+
+h1 {
+  font-size: 8.5rem;
+  line-height: 6.5rem;
+}
+
+h2 {
+  font-size: 10.5rem;
+  line-height: 6.96rem;
+  letter-spacing: 1.09rem;
+}
+
+h3 {
+  font-size: 4.5rem;
+  line-height: 5.8rem;
+  letter-spacing: .49rem;
+}
+
+h4 {
+  font-size: 4rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.43rem;
+}
+
+.logo {
+  font-size: 4.15rem;
+  text-decoration: none;
+}
+
+p {
+  font-size: 2rem; 
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+
+nav {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+li a {
+  color: $iceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+button {
+  color: $iceblue;
+  font-size: 3rem;
+}
+
+form {
+
+}
