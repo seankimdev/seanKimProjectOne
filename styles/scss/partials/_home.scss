@@ -1,0 +1,268 @@
+// header
+
+.homeNavButton {
+  color: $marigold;
+}
+
+.headerFeature {
+  display: flex;
+}
+
+.headerFeature>div:first-child{
+  width: 50%;
+  position: relative;
+  bottom: -50px;
+  left: -10%;
+}
+
+.headerFeature>div:last-child{
+  width: 50%;
+  position:relative;
+  left: -7%;
+  top: 70px;
+}
+
+.headerFeature img{
+  filter: sepia(100%);
+}
+
+// Main section
+
+// alternate background colors
+.homeMain section:nth-child(2n+1){
+  background-color: $camogreen;
+}
+
+.homeMain section:nth-child(2n+2){
+  background-color: $charcoal;
+}
+
+// section: New adventure
+
+.newAdventure>.wrapper {
+  padding: 100px 0;
+  display: flex;
+}
+
+.newAdventure .leftContainer {
+  width: 85%;
+  padding-right: 50px;
+}
+
+.newAdventure img {
+  box-shadow: -15px 15px $mudgreen;
+}
+
+.newAdventure button {
+  margin-top: 10px;
+}
+
+
+// section: three images
+
+.threeImgs ul {
+  display: flex;
+  padding: 100px 0;
+  gap: 30px;
+}
+
+//section: benefits
+
+.benefits ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 100px 0;
+}
+
+.benefits li {
+  flex: 1 0 40%;
+  min-width: 300px;
+  padding-left: 50px;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 0px;
+  background-color: $mudgreen;
+  padding: 10px;
+  top: 1%;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Free"; 
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.offers::before {
+    content: "\f015";
+}
+.community::before {
+    content: "\f0c0";
+}
+.blog::before {
+    content: "\f15b";
+    padding: 9px 14px;
+}
+.getInTouch::before {
+    content: "\f095";
+    padding: 9px 11px;
+}
+
+// section: group programs & New locations
+
+.moreInfo .fullWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 100px;
+}
+
+.moreInfo .fullWrapper>div {
+  flex: 1 0 40%;
+}
+
+.moreInfo .leftImage {
+  position: relative;
+  top: -40px;
+}
+
+.moreInfo .leftImage img {
+  box-shadow: 15px 15px $marigold;
+}
+
+.moreInfo .rightImage {
+  position:relative;
+  bottom: -40px;
+}
+
+.moreInfo .rightImage img {
+  position: relative;
+  display: block;
+  box-shadow: -15px 15px $marigold;
+}
+
+.moreInfo .textBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreInfo .leftTextbox {
+  align-items:flex-end;
+  padding-left: 10%;
+  padding-bottom: 50px;
+}
+
+.moreInfo .rightTextbox {
+  align-items: flex-start;
+  padding-right: 10%;
+  padding-top: 50px;
+}
+
+// section: free trials
+
+.sectionFreeTrials .wrapper {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.sectionFreeTrials img {
+  object-fit: cover;;
+}
+
+@media (max-width:992px){
+
+  .moreInfo .fullWrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .moreInfo .fullWrapper>div {
+    flex-grow: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .moreInfo .textBox {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .moreInfo .leftTextbox {
+    order: 2;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px){
+  .headerFeature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerFeature>div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .headerFeature>div:first-child{
+    width: 50%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .headerFeature>div:last-child{
+    width: 80%;
+    left: 0;
+    top: 0;
+    margin: 50px 0;
+  }
+
+  // section: new adeventure
+
+  .newAdventure>.wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .newAdventure .leftContainer {
+    width: 85%;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .newAdventure .rightImgContainer {
+    order: -1;
+    width: 50%;
+  }
+
+  .threeImgs ul {
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 30px;
+
+    align-items: center;
+
+  }
+
+  .threeImgs li {
+    width: 50%;
+  }
+
+
+  .sectionFreeTrials .wrapper {
+    padding: 50px 0;
+  }
+
+
+}

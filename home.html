@@ -10,18 +10,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a590ece2a0.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-  <header class="homeHeader">
+<body class="homePage">
+  <header>
     <div class="wrapper">
       <nav class="topBar">
         <a class="logo" href="">Mindn&#8217Soul</a>
+        
+        <button class="menu">
+          <i class="fa fa-bars"></i>
+        </button>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="./home.html" class="homeNavButton">Home</a></li>
+          <li><a href="" class="aboutNavButton">About</a></li>
+          <li><a href="./blog.html" class="blogNavButton">Blog</a></li>
+          <li><a href="./contact.html" class="contactNavButton">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -64,19 +69,19 @@
   <section class="benefits">
     <div class="wrapper">
       <ul>
-        <li>
+        <li class="icon offers">
           <h4>Customized offers</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nostrum dolorem deserunt tempora porro excepturi unde maiores.</p>
         </li>
-        <li>
+        <li class="icon community">
           <h4>Community</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nostrum dolorem deserunt tempora porro excepturi unde maiores.</p>
         </li>
-        <li>
+        <li class="icon blog">
           <h4>Blog</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nostrum dolorem deserunt tempora porro excepturi unde maiores.</p>
         </li>
-        <li>
+        <li class="icon getInTouch">
           <h4>Get in Touch</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nostrum dolorem deserunt tempora porro excepturi unde maiores.</p>
         </li>
@@ -84,26 +89,37 @@
     </div>
   </section>
 
-  <section>
-    <div>
-      <div>
+  <section class="moreInfo">
+    <div class="fullWrapper">
+      <div class="leftImage">
         <img src="./assets/left-image.jpg" alt="">
-        <h3>New locations</h3>
       </div>
-      <div>
-        <h3>Group programs</h3>
+      <div class="textBox rightTextbox">
+        <h3>Group Programs</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod officia est sequi? Distinctio, eveniet eos dicta tempora laboriosam temporibus repudiandae.</p>
+        <button>Read More</button>
+      </div>  
+      <div class="textBox leftTextbox">
+        <h3>New locations</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempore quaerat expedita necessitatibus tenetur omnis quidem
+        nisi asperiores dignissimos optio assumenda</p>
+        <button>Read More</button>
+      </div>
+      <div class="rightImage">
         <img src="./assets/right-image.jpg" alt="">
       </div>
     </div>
   </section>
 
-  <section>
-    <div>
+  <section class="sectionFreeTrials">
+    <div class="fullWrapper">
       <img src="./assets/banner-image.jpg" alt="">
     </div>
     <div class="wrapper">
       <h3>Free trials</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempore quaerat expedita necessitatibus tenetur omnis quidem nisi asperiores dignissimos optio assumenda, blanditiis voluptatum, ad impedit aliquam id similique repellat. Nemo.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempore quaerat expedita necessitatibus tenetur omnis quidem nisi asperiores dignissimos optio assumenda.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente architecto dolorum provident possimus quidem dolore nam inventore fuga deleniti.
+      </p>
       <button>Find Out More</button>
     </div>
   </section>

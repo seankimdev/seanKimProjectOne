@@ -1,0 +1,78 @@
+.homePage header {
+  background-image: url(../../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: center;;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.topBar ul{
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topBar li {
+  margin-left: 20px;
+}
+
+.topBar a {
+  padding: 5px 10px;
+}
+
+button.menu {
+  position: absolute;
+  background: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  display: none;
+}
+
+button.menu:focus {
+  border: 2px dotted white;
+}
+
+i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+
+@media (max-width: 768px){
+  button.menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topBar ul{
+    flex-direction: column;
+    position: absolute;
+    right: -10px;
+    text-align: right;
+    top: 0;
+    gap: 10px;
+    overflow: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+
+  button.menu:hover+ul, 
+  .topBar ul:hover,
+  button.menu:focus+ul,
+  .topBar ul:focus-within{
+    height: auto;
+    padding-top: 70px;
+  }
+
+}
