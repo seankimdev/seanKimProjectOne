@@ -265,20 +265,20 @@ h1 {
 
 h2 {
   font-size: 7.5rem;
-  line-height: 6.96rem;
+  line-height: 4rem;
   letter-spacing: 1.09rem;
 }
 
 h3 {
   font-size: 4.5rem;
   line-height: 5.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
 }
 
 h4 {
   font-size: 4rem;
   line-height: 5.8rem;
-  letter-spacing: 0.43rem;
+  letter-spacing: 0.2rem;
 }
 
 .logo {
@@ -287,10 +287,14 @@ h4 {
 }
 
 p {
-  font-size: 2rem;
-  line-height: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
+}
+
+li {
+  letter-spacing: 0.2rem;
 }
 
 li a {
@@ -308,6 +312,15 @@ button {
 
 small {
   font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+address {
+  font-size: 1.6rem;
+  opacity: 0.8;
+  line-height: 1.4em;
+  letter-spacing: 0.1rem;
+  font-style: normal;
 }
 
 .fontColorMarigold {
@@ -320,32 +333,32 @@ small {
 
 form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #FAFFFE;
-  font-size: 2rem;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
 form input::-moz-placeholder, textarea::-moz-placeholder {
   color: #FAFFFE;
-  font-size: 2rem;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
 form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #FAFFFE;
-  font-size: 2rem;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
 form input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: #FAFFFE;
-  font-size: 2rem;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
 form input, textarea,
 form input::placeholder, textarea::placeholder {
   color: #FAFFFE;
-  font-size: 2rem;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
@@ -357,20 +370,14 @@ form input::placeholder, textarea::placeholder {
 
   h2 {
     font-size: 5.5rem;
-    line-height: 6.96rem;
-    letter-spacing: 1.09rem;
   }
 
   h3 {
-    font-size: 3.5rem;
-    line-height: 3rem;
-    letter-spacing: 0.49rem;
+    font-size: 3rem;
   }
 
   h4 {
     font-size: 3rem;
-    line-height: 3rem;
-    letter-spacing: 0.43rem;
   }
 
   .logo {
@@ -381,8 +388,6 @@ form input::placeholder, textarea::placeholder {
   p {
     font-size: 1.6rem;
     line-height: 2.5rem;
-    letter-spacing: 0.2rem;
-    font-weight: 400;
   }
 
   li a {
@@ -464,8 +469,8 @@ form input, textarea {
 form input {
   border-bottom: 2px solid #FFC600;
   display: inline-block;
-  width: 45%;
-  margin-bottom: 25px;
+  width: 47.25%;
+  margin-bottom: 30px;
 }
 
 form input[type=text] {
@@ -476,12 +481,13 @@ form textarea {
   display: block;
   border: 2px solid #FFC600;
   resize: none;
-  width: 95%;
+  width: 100%;
   height: 200px;
 }
 
 form button {
-  width: 95%;
+  width: 100%;
+  margin-top: 30px;
 }
 
 header {
@@ -497,7 +503,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 50px;
-  padding-top: 0px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -520,7 +526,7 @@ header {
   margin-left: 20px;
 }
 
-.topBar a {
+.topBar li a {
   padding: 5px 10px;
 }
 
@@ -576,7 +582,7 @@ i {
 button.menu:focus + ul,
 .topBar ul:focus-within {
     height: auto;
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }
 footer {
@@ -716,7 +722,7 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px 100px;
+  gap: 0 100px;
 }
 
 .moreInfo .fullWrapper > div {
@@ -763,6 +769,7 @@ footer {
           align-items: flex-end;
   padding-left: 10%;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .moreInfo .rightTextbox {
@@ -815,7 +822,15 @@ footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding: 50px 0;
+    padding-bottom: 50px;
+  }
+
+  .moreInfo .leftImage {
+    top: 0;
+  }
+
+  .moreInfo .rightImage {
+    bottom: 0;
   }
 }
 @media (max-width: 768px) {
@@ -940,7 +955,7 @@ footer {
 }
 
 .commentsSection {
-  padding: 5% 10%;
+  padding: 5% 5% 5% 10%;
 }
 
 .comment {
@@ -969,25 +984,25 @@ footer {
   margin-bottom: 25px;
 }
 
-form {
+.blogMain form {
   margin-left: 10%;
 }
 
-aside > div:first-child {
+.blogMain aside > div:first-child {
   padding-left: 15px;
 }
 
-aside > div:nth-child(2) {
+.blogMain aside > div:nth-child(2) {
   background-color: #555F02;
   padding: 0 15px;
 }
 
-aside img {
+.blogMain aside img {
   -webkit-box-shadow: -15px 15px #555F02;
           box-shadow: -15px 15px #555F02;
 }
 
-aside h4 {
+.blogMain aside h4 {
   font-size: 2rem;
   line-height: 2rem;
   padding: 10px 0 5px 0;
@@ -1015,14 +1030,118 @@ aside h4 {
             flex-direction: column;
   }
 
-  .leftColumn {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
+  .blogMainFlexbox > section {
+    width: 90%;
   }
 
   .blogMainFlexbox > aside {
     width: 60%;
-    margin: 0 0 50px 0;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  form.formComment input {
+    width: 100%;
+  }
+}
+.contactPage header {
+  background-image: url(../assets/contact-image-1.jpg);
+}
+
+.contactPage header h2 {
+  padding: 100px 0;
+}
+
+.contactMain {
+  background: #1E140E;
+}
+
+.contactMain .contactFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactMain form {
+  background: #262725;
+  width: 75%;
+  position: relative;
+  top: -80px;
+  left: -5%;
+  padding: 5%;
+  -webkit-box-shadow: 15px 15px #FFC600;
+          box-shadow: 15px 15px #FFC600;
+}
+
+.contactMain form input,
+.contactMain form textarea {
+  background: #262725;
+}
+
+.contactMain form input::-webkit-input-placeholder, .contactMain form textarea::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.contactMain form input::-moz-placeholder, .contactMain form textarea::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.contactMain form input:-ms-input-placeholder, .contactMain form textarea:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.contactMain form input::-ms-input-placeholder, .contactMain form textarea::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.contactMain form input::placeholder,
+.contactMain form textarea::placeholder {
+  opacity: 0.5;
+}
+
+.contactMain form {
+  padding-bottom: 30px;
+}
+
+.contactMain aside > div {
+  margin-left: 25px;
+  margin-top: 125px;
+}
+
+.socialMediaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.socialMediaContainer i {
+  color: #FFC600;
+  font-size: 2rem;
+}
+
+@media (max-width: 1115px) {
+  .formContact input {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contactMain .contactFlexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .contactMain form {
+    width: 100%;
+  }
+
+  .contactMain aside > div {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }

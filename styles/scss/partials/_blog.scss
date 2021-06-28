@@ -47,7 +47,7 @@
 // section: comments
 
 .commentsSection {
-  padding: 5% 10%;
+  padding: 5% 5% 5% 10%;
 }
 
 .comment {
@@ -78,26 +78,26 @@
 
 // form
 
-form {
+.blogMain form {
   margin-left: 10%;
 }
 
 // aside
 
-aside>div:first-child {
+.blogMain aside>div:first-child {
   padding-left: 15px;
 }
 
-aside>div:nth-child(2) {
+.blogMain aside>div:nth-child(2) {
   background-color: $mudgreen;
   padding: 0 15px;
 }
 
-aside img {
+.blogMain aside img {
   box-shadow: -15px 15px $mudgreen;
 }
 
-aside h4 {
+.blogMain aside h4 {
   font-size: 2rem;
   line-height: 2rem;
   padding: 10px 0 5px 0;
@@ -122,14 +122,21 @@ aside h4 {
   .blogMainFlexbox {
     flex-direction: column;
     // align-items: center;
-  }
+  };
 
-  .leftColumn {
-    flex: 1 0 auto;
+  .blogMainFlexbox>section {
+    width: 90%;
   }
 
   .blogMainFlexbox>aside {
     width: 60%;
-    margin: 0 0 50px 0;
-  }
+    margin: 0 auto;
+    margin-bottom: 10%;
+  };
+  
+
+  form.formComment input {
+    width: 100%;
+  };
+
 }

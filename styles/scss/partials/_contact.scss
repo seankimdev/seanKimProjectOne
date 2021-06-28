@@ -1,0 +1,83 @@
+// header
+.contactPage header {
+    background-image: url(../assets/contact-image-1.jpg);
+}
+
+.contactPage header h2 {
+  padding: 100px 0;
+}
+
+// main
+// form
+.contactMain {
+  background: $camogreen;
+}
+
+.contactMain .contactFlexBox {
+  display: flex;
+}
+
+.contactMain form {
+  background: $charcoal;
+  width: 75%;
+  position: relative;
+  top: -80px;
+  left: -5%;
+  padding: 5%;
+  box-shadow: 15px 15px $marigold;
+}
+
+.contactMain form input,
+.contactMain form textarea {
+  background: $charcoal;
+}
+
+.contactMain form input::placeholder,
+.contactMain form textarea::placeholder {
+  opacity: 0.5;
+}
+
+.contactMain form {
+  padding-bottom: 30px;
+}
+
+// aside
+.contactMain aside>div {
+  margin-left: 25px;
+  margin-top: 125px;
+}
+
+.socialMediaContainer {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.socialMediaContainer i{
+  color: $marigold;
+  font-size: 2rem;
+}
+
+
+@media (max-width: 1115px){
+  .formContact input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .contactMain .contactFlexBox {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contactMain form{
+    width: 100%;
+  }
+
+  .contactMain aside>div {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+}

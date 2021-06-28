@@ -124,7 +124,7 @@
 .moreInfo .fullWrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px 100px;
+  gap: 0 100px;
 }
 
 .moreInfo .fullWrapper>div {
@@ -160,6 +160,7 @@
   align-items:flex-end;
   padding-left: 10%;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .moreInfo .rightTextbox {
@@ -200,8 +201,17 @@
 
   .moreInfo .leftTextbox {
     order: 2;
-    padding: 50px 0;
+    padding-bottom: 50px;
   }
+
+  .moreInfo .leftImage {
+    top: 0;
+  }
+
+  .moreInfo .rightImage {
+    bottom: 0;
+  }
+
 }
 
 @media (max-width: 768px){
@@ -260,7 +270,6 @@
   .threeImgs li {
     width: 50%;
   }
-
 
   .sectionFreeTrials .wrapper {
     padding: 50px 0;

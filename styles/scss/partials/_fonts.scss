@@ -28,20 +28,20 @@ h1 {
 
 h2 {
   font-size: 7.5rem;
-  line-height: 6.96rem;
+  line-height: 4rem;
   letter-spacing: 1.09rem;
 }
 
 h3 {
   font-size: 4.5rem;
   line-height: 5.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
 }
 
 h4 {
   font-size: 4rem;
   line-height: 5.8rem;
-  letter-spacing: 0.43rem;
+  letter-spacing: 0.2rem;
 }
 
 .logo {
@@ -50,10 +50,14 @@ h4 {
 }
 
 p {
-  font-size: 2rem; 
-  line-height: 3.2rem;
+  font-size: 1.6rem; 
+  line-height: 2.5rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
+}
+
+li {
+  letter-spacing: 0.2rem;
 }
 
 li a {
@@ -71,6 +75,15 @@ button {
 
 small {
   font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+address {
+  font-size: 1.6rem;
+  opacity: 0.8;
+  line-height: 1.4em;
+  letter-spacing: 0.1rem;
+  font-style: normal;
 }
 
 .fontColorMarigold {
@@ -84,7 +97,7 @@ small {
 form input, textarea,
 form input::placeholder, textarea::placeholder {
   color: $iceblue;
-  font-size: 2rem;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
@@ -97,20 +110,14 @@ h1 {
 
 h2 {
   font-size: 5.5rem;
-  line-height: 6.96rem;
-  letter-spacing: 1.09rem;
 }
 
 h3 {
-  font-size: 3.5rem;
-  line-height: 3rem;
-  letter-spacing: .49rem;
+  font-size: 3rem;
 }
 
 h4 {
   font-size: 3rem;
-  line-height: 3rem;
-  letter-spacing: 0.43rem;
 }
 
 .logo {
@@ -121,8 +128,6 @@ h4 {
 p {
   font-size: 1.6rem; 
   line-height: 2.5rem;
-  letter-spacing: 0.2rem;
-  font-weight: 400;
 }
 
 
@@ -146,6 +151,5 @@ form input, textarea,
 form input::placeholder, textarea::placeholder {
   font-size: 1.6rem;
 }
-
 
 }
