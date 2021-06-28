@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap");
+
+/* font variables */
+$fontDokdo: 'Dokdo', cursive;
+$fontLato: 'Lato', sans-serif;
+
 /* 1 rem = 10 px Font Size */
 html { font-size: 62.5%; }
 body { 
-  font-family: 'Lato', sans-serif;
+  font-family: $fontLato;
   color: $iceblue;
+  font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, .logo, button {
-  font-family: 'Dokdo', cursive;
+  font-family: $fontDokdo;
   font-weight: normal;
 } 
 
@@ -28,7 +35,7 @@ h2 {
 h3 {
   font-size: 4.5rem;
   line-height: 5.8rem;
-  letter-spacing: .49rem;
+  letter-spacing: 0.1rem;
 }
 
 h4 {
@@ -66,10 +73,20 @@ small {
   font-size: 1.6rem;
 }
 
-// form {
+.fontColorMarigold {
+  color: $marigold;
+}
 
-// }
+.fontColorIceblue {
+  color: $iceblue;
+}
 
+form input, textarea,
+form input::placeholder, textarea::placeholder {
+  color: $iceblue;
+  font-size: 2rem;
+  opacity: 1;
+}
 
 
 @media (max-width: 850px){
@@ -124,4 +141,11 @@ button {
 small {
   font-size: 1.6rem;
 }
+
+form input, textarea,
+form input::placeholder, textarea::placeholder {
+  font-size: 1.6rem;
+}
+
+
 }

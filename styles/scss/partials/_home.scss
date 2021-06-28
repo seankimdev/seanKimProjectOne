@@ -1,7 +1,7 @@
 // header
 
-.homeNavButton {
-  color: $marigold;
+.homePage header {
+  background-image: url(../assets/home-image-1.jpg);
 }
 
 .headerFeature {
@@ -27,6 +27,10 @@
 }
 
 // Main section
+
+.homeMain ul {
+  list-style-type: none;
+}
 
 // alternate background colors
 .homeMain section:nth-child(2n+1){
@@ -250,9 +254,7 @@
     flex-direction: column;
     padding: 50px 0;
     gap: 30px;
-
     align-items: center;
-
   }
 
   .threeImgs li {
@@ -263,6 +265,5 @@
   .sectionFreeTrials .wrapper {
     padding: 50px 0;
   }
-
 
 }

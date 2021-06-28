@@ -1,5 +1,4 @@
-.homePage header {
-  background-image: url(../../assets/home-image-1.jpg);
+header {
   background-size: cover;
   background-position: center;;
 }
@@ -8,7 +7,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 0px;
   position: relative;
 }
 
@@ -16,6 +15,9 @@
   flex: 1 0 50%;
   display: flex;
   justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .topBar li {
@@ -24,6 +26,10 @@
 
 .topBar a {
   padding: 5px 10px;
+}
+
+.topBar a.selected {
+  color: $marigold;
 }
 
 button.menu {

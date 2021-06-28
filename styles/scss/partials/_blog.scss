@@ -1,0 +1,135 @@
+// header
+.blogPage header {
+    background-image: url(../assets/blog-image-1.jpg);
+}
+
+.blogPage header h2 {
+  padding: 100px 0;
+}
+
+//main
+.blogMain {
+  background: $camogreen;
+}
+
+.blogMainFlexbox {
+  display: flex;
+  gap: 10%;
+}
+// section: blog
+
+.blogMainFlexbox>section {
+  width: 70%;
+  position: relative;
+  top: -80px;
+}
+
+.blogSection img {
+    box-shadow: 15px 15px $mudgreen;
+}
+
+.blogSection>div:first-child {
+  margin-right: 15px;
+}
+
+.blogSection>div:nth-child(2) {
+  border-right: 5px solid $mudgreen;
+  border-bottom: 5px solid $mudgreen;
+  padding: 5% 10%;
+}
+
+.blogMainFlexbox>aside {
+  margin-top: 100px;
+  width: 20%;
+}
+
+
+// section: comments
+
+.commentsSection {
+  padding: 5% 10%;
+}
+
+.comment {
+  padding-left: 100px;
+  position: relative;
+}
+
+.comment::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 0;
+}
+
+.comment1::before {
+  background-image: url(../assets/comment-image.jpg);
+}
+.comment2::before {
+  background-image: url(../assets/comment-image2.jpg);
+}
+
+.comment1 {
+  margin-bottom: 25px;
+}
+
+
+// form
+
+form {
+  margin-left: 10%;
+}
+
+// aside
+
+aside>div:first-child {
+  padding-left: 15px;
+}
+
+aside>div:nth-child(2) {
+  background-color: $mudgreen;
+  padding: 0 15px;
+}
+
+aside img {
+  box-shadow: -15px 15px $mudgreen;
+}
+
+aside h4 {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 10px 0 5px 0;
+}
+
+.blogMain ul {
+  padding: 0 20px 10px 20px;
+  margin: 0;
+}
+
+.blogMain li {
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blogMain li::marker {
+  color: $marigold;
+}
+
+
+@media (max-width: 992px){
+  .blogMainFlexbox {
+    flex-direction: column;
+    // align-items: center;
+  }
+
+  .leftColumn {
+    flex: 1 0 auto;
+  }
+
+  .blogMainFlexbox>aside {
+    width: 60%;
+    margin: 0 0 50px 0;
+  }
+}

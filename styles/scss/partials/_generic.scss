@@ -8,15 +8,46 @@ img {
   object-fit: cover;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
 
 button {
   background-color: $mudgreen;
   border: none;
   padding: 5px 10px;
   margin-top: 20px;
+}
+
+ul {
+  margin: 0;
+}
+
+// form generic styling
+
+
+form input, textarea {
+  background-color: $camogreen;
+  border: none;
+  padding: 10px 20px;
+}
+
+form input {
+  border-bottom: 2px solid $marigold;
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 25px;
+}
+
+form input[type="text"] {
+  margin-right: 5%;
+}
+
+form textarea {
+  display: block;
+  border: 2px solid $marigold;
+  resize: none;
+  width: 95%;
+  height: 200px;
+}
+
+form button {
+  width: 95%;
 }
