@@ -985,6 +985,7 @@ footer {
 }
 
 .blogMain form {
+  margin-top: 50px;
   margin-left: 10%;
 }
 
@@ -1044,6 +1045,10 @@ footer {
     width: 100%;
   }
 }
+.contactPage {
+  min-height: 100vh;
+}
+
 .contactPage header {
   background-image: url(../assets/contact-image-1.jpg);
 }

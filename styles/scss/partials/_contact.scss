@@ -1,3 +1,9 @@
+// contact page styling
+
+.contactPage{
+    min-height: 100vh;
+}
+
 // header
 .contactPage header {
     background-image: url(../assets/contact-image-1.jpg);
@@ -8,7 +14,7 @@
 }
 
 // main
-// form
+// contact form
 .contactMain {
   background: $camogreen;
 }
@@ -41,7 +47,7 @@
   padding-bottom: 30px;
 }
 
-// aside
+// aside: contact info
 .contactMain aside>div {
   margin-left: 25px;
   margin-top: 125px;

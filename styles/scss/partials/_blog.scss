@@ -1,3 +1,5 @@
+// blog page styling
+
 // header
 .blogPage header {
     background-image: url(../assets/blog-image-1.jpg);
@@ -16,8 +18,7 @@
   display: flex;
   gap: 10%;
 }
-// section: blog
-
+// section: blog post
 .blogMainFlexbox>section {
   width: 70%;
   position: relative;
@@ -45,7 +46,6 @@
 
 
 // section: comments
-
 .commentsSection {
   padding: 5% 5% 5% 10%;
 }
@@ -75,15 +75,14 @@
   margin-bottom: 25px;
 }
 
-
-// form
+// comment form
 
 .blogMain form {
+  margin-top: 50px;
   margin-left: 10%;
 }
 
 // aside
-
 .blogMain aside>div:first-child {
   padding-left: 15px;
 }
@@ -121,7 +120,6 @@
 @media (max-width: 992px){
   .blogMainFlexbox {
     flex-direction: column;
-    // align-items: center;
   };
 
   .blogMainFlexbox>section {
@@ -138,5 +136,4 @@
   form.formComment input {
     width: 100%;
   };
-
 }
