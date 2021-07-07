@@ -271,13 +271,11 @@ h2 {
 
 h3 {
   font-size: 4.5rem;
-  line-height: 5.8rem;
   letter-spacing: 0.3rem;
 }
 
 h4 {
   font-size: 4rem;
-  line-height: 5.8rem;
   letter-spacing: 0.2rem;
 }
 
@@ -365,7 +363,7 @@ form input::placeholder, textarea::placeholder {
 
 @media (max-width: 850px) {
   h1 {
-    font-size: 6rem;
+    font-size: calc(4rem + 2.5vw);
     line-height: 5rem;
   }
 
@@ -679,6 +677,50 @@ footer {
   gap: 30px;
 }
 
+.enlargeImg img:hover,
+.enlargeImg img:focus {
+  border: 2px solid #FFC600;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+  margin: 10% auto;
+  padding: 0;
+  border: 5px solid #FFC600;
+  border-radius: 1%;
+  width: 70%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close {
+  color: #FFC600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+  line-height: 1.6rem;
+  padding: 1%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
 .benefits ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,13 +735,13 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 40%;
           flex: 1 0 40%;
-  min-width: 300px;
   padding-left: 50px;
   margin-bottom: 5%;
   position: relative;
 }
 
-.icon::before {
+.icon::before,
+.icon::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -970,6 +1012,10 @@ footer {
 .blogMainFlexbox > aside {
   margin-top: 100px;
   width: 20%;
+}
+
+.blogSection p {
+  margin-top: 20px;
 }
 
 .commentsSection {

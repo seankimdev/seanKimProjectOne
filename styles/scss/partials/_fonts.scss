@@ -36,13 +36,11 @@ h2 {
 
 h3 {
   font-size: 4.5rem;
-  line-height: 5.8rem;
   letter-spacing: 0.3rem;
 }
 
 h4 {
   font-size: 4rem;
-  line-height: 5.8rem;
   letter-spacing: 0.2rem;
 }
 
@@ -107,7 +105,9 @@ form input::placeholder, textarea::placeholder {
 
 @media (max-width: 850px){
 h1 {
-  font-size: 6rem;
+  font-size: calc(4rem + 2.5vw);
+  // font-size: 6rem;
+
   line-height: 5rem;
 }
 
