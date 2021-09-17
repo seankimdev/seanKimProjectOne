@@ -1,5 +1,5 @@
 # Bootcamp Project 1: Multi-page site  
-A responsive and functional multi-page PSD conversion.
+A responsive and functional multi-page PSD conversion.  
 Stacks used: HTML, SCSS
   
 - [Live](https://mind-n-soul.netlify.app)
