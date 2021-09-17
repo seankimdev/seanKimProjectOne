@@ -1,4 +1,4 @@
-# Bootcamp Project 1: Multi-page site  
+# Design Guide PSD Conversion project
 A responsive and functional multi-page PSD conversion.  
 Stacks used: HTML, SCSS
   
